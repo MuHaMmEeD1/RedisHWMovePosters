@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Move Images List</h2>
+
+<ul>
+    @foreach (var image in Model)
+    {
+        <li>@image</li>
+        <img src=@image/>
+    }
+</ul>
